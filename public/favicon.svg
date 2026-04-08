@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 浅色背景 -->
+  <rect width="64" height="64" rx="12" fill="#f8fafc"/>
+  
+  <!-- 核心六边形 -->
+  <polygon points="32,8 52,20 52,40 32,52 12,40 12,20" fill="url(#coreGrad)"/>
+  
+  <!-- T字母 - 几何风格 -->
+  <rect x="20" y="22" width="24" height="5" rx="1" fill="white"/>
+  <rect x="29" y="27" width="6" height="18" rx="1" fill="white"/>
+  
+  <!-- 轨道 -->
+  <ellipse cx="32" cy="28" rx="24" ry="10" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.5" transform="rotate(-20, 32, 28)"/>
+</svg>

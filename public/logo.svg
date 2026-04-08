@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#6366f1" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 浅色背景 -->
+  <rect width="200" height="200" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- 核心六边形 -->
+  <polygon points="100,30 150,57.5 150,112.5 100,140 50,112.5 50,57.5" 
+           fill="url(#coreGrad)" filter="url(#shadow)"/>
+  
+  <!-- 内部T字母 - 几何风格 -->
+  <rect x="70" y="60" width="60" height="12" rx="3" fill="white"/>
+  <rect x="89" y="72" width="22" height="48" rx="3" fill="white"/>
+  
+  <!-- 环绕轨道 -->
+  <ellipse cx="100" cy="85" rx="70" ry="28" fill="none" stroke="url(#ringGrad)" stroke-width="3" opacity="0.5" transform="rotate(-20, 100, 85)"/>
+  
+  <!-- 轨道节点 -->
+  <circle cx="165" cy="65" r="6" fill="#06b6d4"/>
+  <circle cx="35" cy="105" r="6" fill="#8b5cf6"/>
+  
+  <!-- 品牌名 -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1e1b4b" letter-spacing="12">TIA</text>
+</svg>
